@@ -22,11 +22,11 @@ hand_right:
   motor_ids: [42,43,44,45]
   use_motor_config: true
   endeffector: "hand_right"
-  max_setpoints: [825, 950, 1000, 1000]
+  max_setpoints: [725, 850, 700, 800]
 hand_left:
   motor_ids: [40,41,38,39]
   use_motor_config: true
   endeffector: "hand_left"
-  max_setpoints: [775, 900, 1000, 1000]
+  max_setpoints: [900, 900, 1000, 1000]
 spine:
-  motor_ids: [47, 48, 49, 50] # 46,50,51]
+  motor_ids: [47, 48, 49, 50, 46,50,51]
