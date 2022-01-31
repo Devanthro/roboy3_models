@@ -1,0 +1,10 @@
+joint_names: ['axis0','axis1','axis2']
+#joint_names: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2','elbow_left_axis0', 'elbow_left_axis1', 'head_axis0', 'head_axis1', 'head_axis2', 'shoulder_right_axis0', 'shoulder_right_axis1', 'shoulder_right_axis2', 'elbow_right_axis0', 'elbow_right_axis1']
+#  'head_axis0', 'head_axis1', 'head_axis2']
+ # 'shoulder_left_axis0', 'shoulder_left_axis1', 'shoulder_left_axis2', 'elbow_left_axis0', 'elbow_left_axis1' ]
+endeffectors: ['arm']
+#endeffectors: ['head']
+arm:
+  base_link: 'base'
+  body_parts: ['shoulder']
+  joints: ['axis0','axis1','axis2']

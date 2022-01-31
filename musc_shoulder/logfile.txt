@@ -1,0 +1,24 @@
+Body: arm
+COM: arm -21.8472136511539 2.4365474584233384 17.37742191754897
+exporting stl of arm
+Body: base
+COM: base -7.334528980417671 2.5033465691658883 25.408470509439013
+exporting stl of base
+Body: shoulder_link1
+COM: shoulder_link1 -20.42796649525703 2.9062023483753685 37.68360881642416
+exporting stl of shoulder_link1
+Body: shoulder_link2
+COM: shoulder_link2 -21.278835033779746 1.9062190441738909 37.60742661807115
+exporting stl of shoulder_link2
+Joint: EXPORT_shoulder_axis0
+	parent: base
+	child: shoulder_link1
+	pos: -0.5523392445821322	-0.46670791573042303	0.0
+Joint: EXPORT_shoulder_axis1
+	parent: shoulder_link1
+	child: shoulder_link2
+	pos: 1.7127428563136817	0.533275388471055	0.07618219835300266
+Joint: EXPORT_shoulder_axis2
+	parent: shoulder_link2
+	child: arm
+	pos: 0.8669079113147404	0.0029469742216075012	20.306186898875186

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<robot name="musc_shoulder">
+  <joint name="axis0" type="revolute">
+    <parent link="base"/>
+    <child link="shoulder_link1"/>
+    <origin rpy="0 0 0" xyz="-0.2098   0.02439  0.37683"/>
+    <axis xyz="0 1  0"/>
+    <limit effort="0.0" lower="0.0" upper="1.57079632679" velocity="0.0"/>
+  </joint>
+  <joint name="axis1" type="revolute">
+    <parent link="shoulder_link1"/>
+    <child link="shoulder_link2"/>
+    <origin rpy="0 0 0" xyz="0.01414 0      0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0.0" lower="-1.57079632679" upper="1.57079632679" velocity="0.0"/>
+  </joint>
+  <joint name="axis2" type="revolute">
+    <parent link="shoulder_link2"/>
+    <child link="arm"/>
+    <origin rpy="0 0 0" xyz="-0.01414  0       0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" lower="-1.2217304764" upper="1.2217304764" velocity="0.0"/>
+  </joint>
+  <link name="arm">
+    <inertial>
+      <mass value="1.3900711467671745"/>
+      <origin rpy="0 0 0" xyz="-8.6600e-03 -2.0000e-05 -2.0306e-01"/>
+      <inertia ixx="0.05165470764810388" ixy="0.007395005001894429" ixz="0.05294857060727835" iyy="0.11721077113089157" iyz="-0.0058812250172963505" izz="0.0682664756117262"/>
+    </inertial>
+    <collision name="arm_collision">
+      <origin rpy="0 0 0" xyz="-8.6600e-03 -2.0000e-05 -2.0306e-01"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/arm.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="arm_visual">
+      <origin rpy="0 0 0" xyz="-8.6600e-03 -2.0000e-05 -2.0306e-01"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/arm.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="base">
+    <inertial>
+      <mass value="5.129823793617418"/>
+      <origin rpy="0 0 0" xyz="-0.07334  0.02503  0.25408"/>
+      <inertia ixx="0.3924898054873209" ixy="0.009815079439375258" ixz="0.10252824580446568" iyy="0.41722624828278" iyz="-0.03302147764825088" izz="0.06630957472950233"/>
+    </inertial>
+    <collision name="base_collision">
+      <origin rpy="0 0 0" xyz="-0.07334  0.02503  0.25408"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="base_visual">
+      <origin rpy="0 0 0" xyz="-0.07334  0.02503  0.25408"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder_link1">
+    <inertial>
+      <mass value="3.839261942680571e-06"/>
+      <origin rpy="0 0 0" xyz="0.00552 0.00466 0"/>
+      <inertia ixx="5.48659016768844e-07" ixy="2.2809314376729742e-08" ixz="2.9554619174033445e-07" iyy="7.05611674891562e-07" iyz="-4.204613497327697e-08" izz="1.6356395688392827e-07"/>
+    </inertial>
+    <collision name="shoulder_link1_collision">
+      <origin rpy="0 0 0" xyz="0.00552 0.00466 0"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/shoulder_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="shoulder_link1_visual">
+      <origin rpy="0 0 0" xyz="0.00552 0.00466 0"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/shoulder_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="shoulder_link2">
+    <inertial>
+      <mass value="4.639261942680568e-06"/>
+      <origin rpy="0 0 0" xyz="-0.01712 -0.00533 -0.00076"/>
+      <inertia ixx="6.580421799820622e-07" ixy="1.8829176836912352e-08" ixz="3.712758817844876e-07" iyy="8.664972320005396e-07" iyz="-3.3255090176524245e-08" izz="2.119300388119357e-07"/>
+    </inertial>
+    <collision name="shoulder_link2_collision">
+      <origin rpy="0 0 0" xyz="-0.01712 -0.00533 -0.00076"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/shoulder_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <visual name="shoulder_link2_visual">
+      <origin rpy="0 0 0" xyz="-0.01712 -0.00533 -0.00076"/>
+      <geometry>
+        <mesh filename="package://robots/musc_shoulder/meshes/CAD/shoulder_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
