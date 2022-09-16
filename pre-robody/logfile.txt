@@ -1,0 +1,157 @@
+Body: Torso
+COM: Torso -2.2573269931661763e-11 -7.373558974626042e-16 106.10561705602035
+exporting stl of Torso
+Body: Shoulder_1_Right
+COM: Shoulder_1_Right 8.200408206168381 -0.0003783883224433904 109.90040820565598
+exporting stl of Shoulder_1_Right
+Body: Shoulder_2_Right
+COM: Shoulder_2_Right 20.499999999487457 -0.0002470048853215355 122.19859414214113
+exporting stl of Shoulder_2_Right
+Body: ElbowSegment_Right
+COM: ElbowSegment_Right 20.50045015798713 2.717612187223314e-10 97.24009508312618
+exporting stl of ElbowSegment_Right
+Body: Wrist_Right
+COM: Wrist_Right 20.5000000000019 0.0006913127882814822 72.28000000054357
+exporting stl of Wrist_Right
+Body: EndEffector_Right
+COM: EndEffector_Right 20.500149347460866 0.0 63.28171587774016
+exporting stl of EndEffector_Right
+Body: UpperArm_Right
+COM: UpperArm_Right 20.50012998505205 9.111600451728522e-16 105.41578896430777
+exporting stl of UpperArm_Right
+Body: LowerArm_Right
+COM: LowerArm_Right 20.500000000206025 0.0003321300814079996 81.40447593373845
+exporting stl of LowerArm_Right
+Body: Spine
+COM: Spine 7.092983703254018e-18 4.497243671119389 85.57258235211881
+exporting stl of Spine
+Body: Hip
+COM: Hip -3.649802365838501e-17 7.348022717878026e-16 72.27448360827573
+exporting stl of Hip
+Body: UpperLeg
+COM: UpperLeg -1.5193088194136304e-14 -2.5751599134601776e-08 43.00578982444661
+exporting stl of UpperLeg
+Body: WheelBase
+COM: WheelBase 4.464405237284462 -3.378836273972026 9.266623657679002e-05
+exporting stl of WheelBase
+Body: LowerLeg
+COM: LowerLeg -1.0171354509022438e-09 -5.927163191371302e-06 13.503048076080583
+exporting stl of LowerLeg
+Body: NeckSegment_1
+COM: NeckSegment_1 0.000183505463377951 5.211321215813567e-16 125.98808939570957
+exporting stl of NeckSegment_1
+Body: NeckSegment_2
+COM: NeckSegment_2 -0.00020195895173734943 0.0006392668737571476 134.38782414685755
+exporting stl of NeckSegment_2
+Body: Head
+COM: Head -5.893453148052972e-07 2.3174030908719593e-05 137.0039360262084
+exporting stl of Head
+Body: Shoulder_1_Left
+COM: Shoulder_1_Left -8.200408206168383 -0.00037838832244338965 109.90040820565598
+exporting stl of Shoulder_1_Left
+Body: Shoulder_2_Left
+COM: Shoulder_2_Left -20.499999999487457 -0.0002470048853215355 122.19859414214113
+exporting stl of Shoulder_2_Left
+Body: ElbowSegment_Left
+COM: ElbowSegment_Left -20.50045015798713 2.717612187223314e-10 97.24009508312618
+exporting stl of ElbowSegment_Left
+Body: Wrist_Left
+COM: Wrist_Left -20.5000000000019 0.0006913127882814822 72.28000000054357
+exporting stl of Wrist_Left
+Body: EndEffector_Left
+COM: EndEffector_Left -20.50014934746087 0.0 63.28171587774011
+exporting stl of EndEffector_Left
+Body: UpperArm_Left
+COM: UpperArm_Left -20.500129985052048 3.2641221542052277e-16 105.41578896430775
+exporting stl of UpperArm_Left
+Body: LowerArm_Left
+COM: LowerArm_Left -20.50000000020602 0.0003321300814079997 81.40447593373847
+exporting stl of LowerArm_Left
+Joint: EXPORT_Ankle_Y
+	parent: WheelBase
+	child: LowerLeg
+	pos: 1.0171354509022438e-09	5.927163191371302e-06	-13.503048076080583
+Joint: EXPORT_Knee_X
+	parent: LowerLeg
+	child: UpperLeg
+	pos: 15.000000000000016	2.5751599134601776e-08	-16.00578982444661
+Joint: EXPORT_Hip_X_Lower
+	parent: UpperLeg
+	child: Hip
+	pos: 1.0	-7.348022717878026e-16	-13.27448360827573
+Joint: EXPORT_Hip_X_Upper
+	parent: Hip
+	child: Spine
+	pos: 1.0	-4.497243671119389	-6.572582352118815
+Joint: EXPORT_Spine-Torso_Z
+	parent: Spine
+	child: Torso
+	pos: 2.2573269931661763e-11	1.9603713615611436e-16	-17.105617056020293
+Joint: EXPORT_Neck1_Z
+	parent: Torso
+	child: NeckSegment_1
+	pos: -0.00018350546335656342	-5.211321215813567e-16	-4.949667368563141
+Joint: EXPORT_Neck2_X
+	parent: NeckSegment_1
+	child: NeckSegment_2
+	pos: -2.224798041048779	-0.0006392668737571476	-8.399402119711269
+Joint: EXPORT_Neck3_Y
+	parent: NeckSegment_2
+	child: Head
+	pos: 5.893447988245154e-07	-2.225023174030909	-2.615513999062131
+Joint: EXPORT_Shoulder2_Right
+	parent: Shoulder_1_Right
+	child: Shoulder_2_Right
+	pos: 5.124718427396147e-10	-5.799752995114679	0.001405857858870263
+Joint: EXPORT_Shoulder1_Right
+	parent: Torso
+	child: Shoulder_1_Right
+	pos: -4.455180927647572	0.0003783883224433904	-4.4551809271345775
+Joint: EXPORT_Shoulder3_Right
+	parent: Shoulder_2_Right
+	child: UpperArm_Right
+	pos: -0.0001299850521228052	-1.7993384648729777e-15	13.884211035692246
+Joint: EXPORT_Elbow1_X_Right
+	parent: UpperArm_Right
+	child: ElbowSegment_Right
+	pos: 3.699549842012914	-2.717612187223314e-10	-9.508312618322634e-05
+Joint: EXPORT_Elbow2_Z_Right
+	parent: ElbowSegment_Right
+	child: LowerArm_Right
+	pos: -2.0609647322089586e-10	-0.0003321300814079996	12.300524066261545
+Joint: EXPORT_Wrist1_Y_Right
+	parent: LowerArm_Right
+	child: Wrist_Right
+	pos: 1.7053025658242404e-13	4.034308687211719	-5.435794037111918e-10
+Joint: EXPORT_Wrist2_X_Right
+	parent: Wrist_Right
+	child: EndEffector_Right
+	pos: 3.5348506525412127	0.0	8.998284122259825
+Joint: EXPORT_Shoulder1_Left
+	parent: Torso
+	child: Shoulder_1_Left
+	pos: 4.455180927647573	0.00037838832244338965	-4.4551809271345775
+Joint: EXPORT_Shoulder2_Left
+	parent: Shoulder_1_Left
+	child: Shoulder_2_Left
+	pos: -5.124718427396147e-10	-5.799752995114679	0.0014058578589839499
+Joint: EXPORT_Shoulder3_Left
+	parent: Shoulder_2_Left
+	child: UpperArm_Left
+	pos: 0.00012998505211569977	-3.2641221542052277e-16	13.88421103569219
+Joint: EXPORT_Elbow1_X_Left
+	parent: UpperArm_Left
+	child: ElbowSegment_Left
+	pos: -3.699549842012914	-2.717612187223314e-10	-9.50831260695395e-05
+Joint: EXPORT_Elbow2_Z_Left
+	parent: ElbowSegment_Left
+	child: LowerArm_Left
+	pos: 2.0608936779353826e-10	-0.0003321300814079997	12.300524066261644
+Joint: EXPORT_Wrist1_Y_Left
+	parent: LowerArm_Left
+	child: Wrist_Left
+	pos: -1.7053025658242404e-13	4.034308687211719	-5.434657168734702e-10
+Joint: EXPORT_Wrist2_X_Left
+	parent: Wrist_Left
+	child: EndEffector_Left
+	pos: -3.534850652541209	0.0	8.998284122259989
