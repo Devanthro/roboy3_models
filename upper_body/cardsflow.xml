@@ -132,6 +132,9 @@
 		<link name="upperarm_left">
 			<viaPoint type="FIXPOINT">-0.0063291834397008985 0.05220049430790549 -0.1383210612251393</viaPoint>
 		</link>
+		<link name="elbow_left">
+			<viaPoint type="FIXPOINT">0 0.0 0</viaPoint>
+		</link>
 		<link name="lowerarm_left">
 			<viaPoint type="FIXPOINT">-0.003402465622536539 0.04330409108430624 0.22357830446069232</viaPoint>
 		</link>
@@ -147,6 +150,9 @@
 	<myoMuscle name="motor18">
 		<link name="upperarm_right">
 			<viaPoint type="FIXPOINT">-0.0040008165355123635 0.047735868335724733 -0.14364153252286913</viaPoint>
+		</link>
+		<link name="elbow_right">
+			<viaPoint type="FIXPOINT">0 0.0 0</viaPoint>
 		</link>
 		<link name="lowerarm_right">
 			<viaPoint type="FIXPOINT">0.0014024671261120148 0.04330410122599046 0.22357813900070078</viaPoint>
