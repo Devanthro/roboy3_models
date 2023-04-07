@@ -5,7 +5,7 @@
     <child link="head_link1"/>
     <origin rpy="0 0 0" xyz="0      0      0.62575"/>
     <axis xyz="1 0 0" />
-    <limit effort="1.0" lower="-0.6" upper="0.6" velocity="10.0" />
+    <limit effort="1.0" lower="-0.5" upper="0.2" velocity="10.0" />
   </joint>
   <joint name="head_axis1" type="revolute">
     <parent link="head_link1"/>
