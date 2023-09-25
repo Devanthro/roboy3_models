@@ -9,6 +9,14 @@ lowerarm_right:
   base_link: 'torso'
   body_parts: ['shoulder_right']
   joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2', 'elbow_right_axis0', 'elbow_right_axis1'] 
+hand_left:
+  base_link: 'torso'
+  body_parts: ['shoulder_left']
+  joints: ['shoulder_left_axis0','shoulder_left_axis1','shoulder_left_axis2', 'elbow_left_axis0', 'elbow_left_axis1']
+hand_right:
+  base_link: 'torso'
+  body_parts: ['shoulder_right']
+  joints: ['shoulder_right_axis0','shoulder_right_axis1','shoulder_right_axis2', 'elbow_right_axis0', 'elbow_right_axis1'] 
 head:
   base_link: 'torso'
   joints: ['head_axis0', 'head_axis1', 'head_axis2']
